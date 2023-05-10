@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Join Us</title>
+	<link rel="stylesheet" type="text/css" href="main.css">
+</head>
+<body>
+	<div class = "header">
+		<div class="left">
+			<img src="image/joinus.png" alt="JoinUs">
+			<p1>국민대</p1>
+		</div>
+      	<div class="right">
+        	<input type="text" placeholder="계정" />
+        	<input type="password" placeholder="비밀번호" />
+        	<button>로그인</button>
+        	<button>회원가입</button>
+      	</div>
+	</div>
+	<div class = "menu">
+		<ul>
+			<li>
+			  	<a href="instant.html">즉석스터디</a>
+			</li>
+			<li>
+				<a href="regular.html">정기스터디</a>
+			</li>
+			<li>
+				<a href="studyroom.html">교내열람실</a>
+			</li>
+		</ul>
+	</div>
+	<main>
+		<div class="board">
+			<div class="board_title">
+				<b>즉석스터디</b>
+				<p>혼자서 공부가 잘안되지만 그렇다고 친구와 하면 집중을 못 하는 사람들을 위한 스터디 입니다.</p>
+			</div>
+			<div class="board_list_wrap">
+				<div class="board_list">
+					<div class="top">
+						<div class="num">번호</div>
+						<div class="title">제목</div>
+						<div class="writer">글쓴이</div>
+						<div class="date">작성일</div>
+					</div>
+					<span id="board_contents">
+					</span>
+				</div>
+			</div>
+		</div>
+		<button id="write-btn">글쓰기</button>
+	</main>
+	<div id="write-modal" class="modal">
+		<div class="modal-content">
+			<span class="close">&times;</span>
+			<form id="write-form">
+				<label for="title">제목</label>
+				<input type="text" id="title" name="title" required>
+				<label for="author">작성자</label>
+				<input type="text" id="author" name="author" required>
+				<label for="content">내용</label>
+				<textarea id="content" name="content" required></textarea>
+				<input type="submit" value="등록">
+			</form>
+		</div>
+	</div>
+	<div id="view-modal" class="modal">
+		<div class="modal-content">
+			<span class="close">&times;</span>
+			<h2 id="view-title"></h2>
+			<p id="view-author"></p>
+			<p id="view-date"></p>
+			<p id="view-content"></p>
+		</div>
+	</div>
+	<script src="instant.js"></script>
+</body>
+</html>

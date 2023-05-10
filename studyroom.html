@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Join Us 게시판</title>
+	<link rel="stylesheet" type="text/css" href="sutdyroom.css">
+</head>
+<body>
+	<div class = "header">
+		<div class="left">
+			<img src="image/joinus.png" alt="JoinUs">
+			<p1>국민대</p1>
+		</div>
+      	<div class="right">
+        	<input type="text" placeholder="계정" />
+        	<input type="password" placeholder="비밀번호" />
+        	<button>로그인</button>
+        	<button>회원가입</button>
+      	</div>
+	</div>
+	<div class = "menu">
+		<ul>
+			<li>
+			  	<a href="instant.html">즉석스터디</a>
+			</li>
+			<li>
+				<a href="regular.html">정기스터디</a>
+			</li>
+			<li>
+				<a href="studyroom.html">교내열람실</a>
+			</li>
+		</ul>
+	</div>
+	<main>
+		<div class = first>
+			<div class="building">
+				<img src="image/2열람실1.jpg" alt="도서관" class="building-image" onclick="openModalA()">
+				<p>도서관</p>
+			</div>
+			<div class="building">
+				<img src="image/해동카페1.jpg" alt="해동KL" class="building-image" onclick="openModalB()">
+				<p>해동KL(도서관지하)</p>
+			</div>
+			<div class="building">
+				<img src="image/복지관317호1.jpg" alt="복지관" class="building-image" onclick="openModalC()">
+				<p>복지관</p>
+			</div>
+			<div class="building">
+				<img src="image/북악관9층1.jpg" alt="북악관" class="building-image" onclick="openModalD()">
+				<p>북악관</p>
+			</div>
+		</div>
+	
+		<div id="myModalA" class="modal">
+			<div class="modal-content">
+				<span class="close" onclick="closeModal()">&times;</span>
+				<h1>도서관</h1>
+				<div class="library">
+					<img src="image/2열람실1.jpg" alt="2열람실1" onclick="window.open(this.src)">
+					<img src="image/2열람실2.jpg" alt="2열람실2" onclick="window.open(this.src)">
+					<img src="image/2열람실3.jpg" alt="2열람실3" onclick="window.open(this.src)">
+					<p>2열람실</p>
+					<ul>
+						<li>이용시간 : 07:00 ~ 23:00(주말O)</li>
+						<li>노트북 사용 가능/불가능 구역 존재</li>
+					</ul>
+				</div>
+				<div class="library">
+					<img src="image/금하열람실1.jpg" alt="금하열람실1" onclick="window.open(this.src)">
+					<img src="image/금하열람실2.jpg" alt="금하열람실2" onclick="window.open(this.src)">
+					<img src="image/금하열람실3.jpg" alt="금하열람실3" onclick="window.open(this.src)">
+					<img src="image/금하열람실4.jpg" alt="금하열람실4" onclick="window.open(this.src)">
+					<p>금하열람실</p>
+					<ul>
+						<li>이용시간 : 07:00 ~ 21:00(주말X)</li>
+						<li>노트북 사용 불가능</li>
+					</ul>
+				</div>
+				<div class="library">
+					<img src="image/기술과학도서실1.jpg" alt="기술과학도서실1" onclick="window.open(this.src)">
+					<img src="image/기술과학도서실2.jpg" alt="기술과학도서실2" onclick="window.open(this.src)">
+					<p>기술과학도서실</p>
+					<ul>
+						<li>이용시간 : 09:00 ~ 21:00(주말X)</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+
+		<div id="myModalB" class="modal">
+			<div class="modal-content">
+				<span class="close" onclick="closeModal()">&times;</span>
+				<h1>해동KL</h1>
+				<div class="library">
+					<img src="image/해동카페1.jpg" alt="해동카페1" onclick="window.open(this.src)">
+					<p>해동B1</p>
+					<ul>
+						<li>이용시간 : 07:00 ~ 23:00(주말O)</li>
+						<li>노트북 사용 가능</li>
+						<li>카페 영업중</li>
+					</ul>
+				</div>
+				<div class="library">
+					<img src="image/해동1.jpg" alt="해동1" onclick="window.open(this.src)">
+					<img src="image/해동2.jpg" alt="해동2" onclick="window.open(this.src)">
+					<img src="image/해동3.jpg" alt="해동3" onclick="window.open(this.src)">
+					<p>해동B2</p>
+					<ul>
+						<li>이용시간 : 07:00 ~ 23:00(주말O)</li>
+						<li>노트북 사용 가능</li>
+						<li>계단 밑 빈백에서 취침 가능</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+
+		<div id="myModalC" class="modal">
+			<div class="modal-content">
+				<span class="close" onclick="closeModal()">&times;</span>
+				<h1>복지관 열람실</h1>
+				<div class="library">
+					<img src="image/복지관317호1.jpg" alt="복지관317호1" onclick="window.open(this.src)">
+					<img src="image/복지관317호2.jpg" alt="복지관317호2" onclick="window.open(this.src)">
+					<p>복지관 열람실1</p>
+					<ul>
+						<li>이용시간 : 09:00 ~ 23:00(주말O)</li>
+						<li>노트북 사용 가능</li>
+						<li>복지관 317호</li>
+					</ul>
+				</div>
+				<div class="library">
+					<img src="image/복지관311호1.jpg" alt="복지관311호1" onclick="window.open(this.src)">
+					<p>복지관 열람실2</p>
+					<ul>
+						<li>이용시간 : 09:00 ~ 23:00(주말O)</li>
+						<li>노트북 사용 가능</li>
+						<li>복지관 311호</li>
+					</ul>
+				</div>
+				<div class="library">
+					<img src="image/복지관306호1.jpg" alt="복지관306호1" onclick="window.open(this.src)">
+					<p>복지관 열람실3</p>
+					<ul>
+						<li>이용시간 : 09:00 ~ 23:00(주말O)</li>
+						<li>노트북 사용 불가능</li>
+						<li>복지관 306호</li>
+					</ul>
+				</div>
+				<div class="library">
+					<img src="image/복지관303호1.jpg" alt="복지관303호1" onclick="window.open(this.src)">
+					<p>복지관 열람실4</p>
+					<ul>
+						<li>이용시간 : 09:00 ~ 23:00(주말O)</li>
+						<li>노트북 사용 가능</li>
+						<li>복지관 303호</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+
+		<div id="myModalD" class="modal">
+			<div class="modal-content">
+				<span class="close" onclick="closeModal()">&times;</span>
+				<h1>북악관 열람실</h1>
+				<div class="library">
+					<img src="image/북악관7층1.jpg" alt="북악관7층1" onclick="window.open(this.src)">
+					<img src="image/북악관7층2.jpg" alt="북악관7층2" onclick="window.open(this.src)">
+					<p>북악관 7층 열람실</p>
+					<ul>
+						<li>이용시간 : 09:00 ~ 21:00(주말X)</li>
+						<li>노트북 사용 가능</li>
+					</ul>
+				</div>
+				<div class="library">
+					<img src="image/북악관9층1.jpg" alt="북악관9층1" onclick="window.open(this.src)">
+					<img src="image/북악관9층2.jpg" alt="북악관9층2" onclick="window.open(this.src)">
+					<p>북악관 9층 열람실</p>
+					<ul>
+						<li>이용시간 : 09:00 ~ 23:00</li>
+						<li>노트북 사용 가능</li>
+						<li>글인지대 재학생 전용</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</main>
+	<script src="studyroom.js"></script>
+</body>
+</html>
